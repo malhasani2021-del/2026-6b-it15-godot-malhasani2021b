@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://drxpsaejb7jjb"]
 
+[ext_resource type="Texture2D" uid="uid://igfyudyp3p6" path="res://icon.svg" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://dk1vll23vcoxt" path="res://player.gd" id="2_h2yge"]
+
 [node name="Control" type="Control" unique_id=544712214]
 layout_mode = 3
 anchors_preset = 15
@@ -23,3 +26,7 @@ offset_right = 107.0
 offset_bottom = 72.0
 text = "Klick mich!
 "
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=725849078]
+texture = ExtResource("1_0xm2m")
+script = ExtResource("2_h2yge")
