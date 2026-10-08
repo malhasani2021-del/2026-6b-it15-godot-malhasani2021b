@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://drxpsaejb7jjb"]
 
 [ext_resource type="Texture2D" uid="uid://igfyudyp3p6" path="res://icon.svg" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://k6d8ew12apox" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://dk1vll23vcoxt" path="res://player.gd" id="2_h2yge"]
 
 [node name="Control" type="Control" unique_id=544712214]
@@ -10,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_h2yge")
 
 [node name="Label" type="Label" parent="." unique_id=1054374217]
 layout_mode = 0
@@ -30,3 +32,5 @@ text = "Klick mich!
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=725849078]
 texture = ExtResource("1_0xm2m")
 script = ExtResource("2_h2yge")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
